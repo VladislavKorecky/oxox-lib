@@ -4,7 +4,7 @@
 
 #include <stdint.h>
 #include <stdlib.h>
-#include "std_utils.h"
+#include "utils/functions/std_utils.h"
 #include "bitset.h"
 
 BitSet* bitset_create(const size_t size) {

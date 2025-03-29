@@ -7,7 +7,7 @@
 
 #include <stdio.h>
 
-#include "std_utils.h"
+#include "utils/functions/std_utils.h"
 
 Board* board_create(const uint8_t board_size) {
     if (board_size == 0) {

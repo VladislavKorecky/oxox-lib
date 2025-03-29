@@ -4,10 +4,9 @@
 
 #include "game.h"
 
-#include <stdio.h>
 #include <stdlib.h>
 
-#include "std_utils.h"
+#include "utils/functions/std_utils.h"
 
 const uint8_t NUM_WIN_OFFSETS = 12;
 // index offsets from the last move that determine if the move is a win

@@ -5,7 +5,7 @@
 #include <stddef.h>
 #include <string.h>
 
-#include "std_utils.h"
+#include "utils/functions/std_utils.h"
 #include "bitset.h"
 
 void test_bitset_init(void) {

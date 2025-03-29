@@ -8,7 +8,7 @@
 #include <string.h>
 
 #include "game.h"
-#include "std_utils.h"
+#include "utils/functions/std_utils.h"
 
 void test_game_clone(void) {
     const char* repr = "__X___O_______X_O__X_____";

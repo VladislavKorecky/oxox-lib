@@ -4,7 +4,7 @@ project(oxox_lib C)
 set(CMAKE_C_STANDARD 23)
 
 # list of all utility code
-set(ALL_UTIL_FILES main/utils/data_structures/bitset.c include/bitset.h main/utils/functions/std_utils.c headers/std_utils.h)
+set(ALL_UTIL_FILES main/utils/data_structures/bitset.c include/bitset.h main/utils/functions/std_utils.c main/utils/functions/std_utils.h)
 
 # list of all OXOX game files
 set(GAME_FILES main/game/board.c include/board.h main/game/game.c include/game.h)
@@ -21,7 +21,7 @@ add_executable(full_tests
         tests/utils/data_structures/test_bitset.h
         tests/tester.c
 )
-target_include_directories(full_tests PRIVATE headers)
+target_include_directories(full_tests PRIVATE main)
 target_include_directories(full_tests PRIVATE include)
 
 # build the library
@@ -29,7 +29,7 @@ add_library(oxox_lib STATIC
         ${ALL_UTIL_FILES}
         ${GAME_FILES}
 )
-target_include_directories(oxox_lib PRIVATE headers)
+target_include_directories(oxox_lib PRIVATE main)
 target_include_directories(oxox_lib PUBLIC include)
 target_compile_options(oxox_lib PRIVATE
         $<$<CONFIG:Debug>:-g -O0>

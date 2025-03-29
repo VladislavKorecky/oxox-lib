@@ -8,7 +8,7 @@
 #include <string.h>
 
 #include "board.h"
-#include "std_utils.h"
+#include "utils/functions/std_utils.h"
 
 void test_board_init(void) {
     // 2x2 board
